@@ -5,7 +5,7 @@ def initialize_db():
     connection = sqlite3.connect("academic_planner.db")
     cursor = connection.cursor()
 
-    # Drop any existing Tasks table to avoid conflicts (if necessary)
+    # Drop any existing Tasks table to avoid conflicts 
     cursor.execute("DROP TABLE IF EXISTS Tasks")
     
     # Create the updated Tasks table schema
